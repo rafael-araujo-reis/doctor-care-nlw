@@ -4,6 +4,25 @@
   margin-inline    : auto;
 }
 
+body.menu-expanded .logo,
+body.menu-expanded button {
+  position: relative;
+  z-index: 100;
+}
+
+body .menu,
+body.menu-expanded .open-menu{
+  opacity: 0;
+  visibility: hidden;
+}
+
+body.menu-expanded .menu,
+body.menu-expanded .close-menu{
+  opacity: 1;
+  visibility: visible;
+}
+
+/***** NAVIGATION ******************************/
 nav{
   height: var(--nav-height);
   
@@ -16,6 +35,65 @@ nav{
   /* transform: translateX(50%); */
 }
 
+nav .menu{
+  position: absolute;
+
+  background-color: var(--primary-color);
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid #000;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 7rem;
+}
+
+.open-menu, .close-menu{
+  border: none;
+  background-color: transparent;
+}
+
+.close-menu{
+  position: absolute;
+  visibility: hidden;
+}
+
+nav .menu ul:nth-child(1){
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+
+  width: 100%;
+
+  align-items: center;
+
+  margin-top: calc(4rem + var(--nav-height));
+}
+
+nav .menu .button{
+  cursor: pointer;
+  border-radius: 4rem;
+
+  padding: 1rem 2rem;
+  
+  text-transform: uppercase;
+
+  background-color: var(--secondary-color-white);
+  color: var(--primary-color);
+  font-weight: 700;
+
+  font-size: 1.4rem;
+}
+
+nav a, .social-media a {
+  color: var(--secondary-color-white);
+  display: flex;
+  gap: 3rem;
+}
+
 nav .wrapper{
   width: 100%;
   
@@ -25,9 +103,7 @@ nav .wrapper{
   padding-inline: 1rem;
 }
 
-.scroll{
-  background-color: var(--primary-color);
-}
+
 nav.scroll{
   /* position: fixed;
   width: 100vh;
@@ -41,6 +117,25 @@ nav.scroll svg:nth-child(1) path {
 nav.scroll a svg path  {
   stroke: var(--secondary-color-white);
 }
+
+nav.scroll svg:nth-child(1) path,
+body.menu-expanded .logo path
+{
+ fill: var(--secondary-color-white);
+}
+
+nav.scroll svg path,
+body.menu-expanded button path
+{
+  stroke: var(--secondary-color-white);
+}
+
+.scroll{
+  background-color: var(--primary-color);
+  transition: all 0.2s;
+}
+
+/***** HEADER ******************************/
 
 
 header {
