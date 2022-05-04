@@ -9,6 +9,12 @@ body.menu-expanded button {
   position: relative;
   z-index: 100;
 }
+body.menu-expanded{
+  overflow: hidden;
+}
+body.menu-expanded > :not(nav){
+  display: none
+}
 
 body .menu,
 body.menu-expanded .open-menu{
@@ -20,6 +26,7 @@ body.menu-expanded .menu,
 body.menu-expanded .close-menu{
   opacity: 1;
   visibility: visible;
+  
 }
 
 /***** NAVIGATION ******************************/
@@ -88,7 +95,7 @@ nav .menu .button{
   font-size: 1.4rem;
 }
 
-nav a, .social-media a {
+nav a, .social-media {
   color: var(--secondary-color-white);
   display: flex;
   gap: 3rem;
@@ -101,13 +108,6 @@ nav .wrapper{
   justify-content: space-between;
   align-items: center;
   padding-inline: 1rem;
-}
-
-
-nav.scroll{
-  /* position: fixed;
-  width: 100vh;
-  transform: translateX(0) */
 }
 
 nav.scroll svg:nth-child(1) path {
