@@ -16,22 +16,19 @@
   <title>DoctorCare</title>
 </head>
 
-<body onscroll="onScroll()" class="">
+<body onscroll="onScroll()">
 
-  <nav id="navigation" class="">
+  <nav id="navigation">
     <div class="menu">
       <ul>
         <li>
-          <a href="#">Início</a>
+          <a href="#home" onclick="closeMenu()">Início</a>
         </li>
         <li>
-          <a href="#">Sobre</a>
+          <a href="#services" onclick="closeMenu()">Serviços</a>
         </li>
         <li>
-          <a href="#">Serviços</a>
-        </li>
-        <li>
-          <a href="#">Depoimentos</a>
+          <a href="#about" onclick="closeMenu()">Sobre</a>
         </li>
       </ul>
 
@@ -119,49 +116,120 @@
           <path d="M30 10L10 30M10 10L30 30" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"
             stroke-linejoin="round" />
         </svg>
-
       </button>
     </div>
   </nav>
 
-  <header class="wrapper">
-    <section class="hero">
-      <h4>Boas vindas a DoctorCare 👋</h4>
-      <h1 class="title">Assistência médica simplificada para todos</h1>
+  <header></header>
+  <section id="home">
+    <div class="wrapper">
+      <header>
+        <h4 class="subtitle">Boas vindas a DoctorCare 👋</h4>
+        <h2 class="title">Assistência médica simplificada para todos</h2>
+      </header>
 
-      <p class="subtitle">
-        Os médicos da DoctorCare vão além dos sintomas para tratar a causa raiz de sua doença e proporcionar uma cura a
-        longo prazo.
-      </p>
+      <div class="content">
+        <p>Os médicos da DoctorCare vão além dos sintomas para tratar a causa raiz de sua doença e proporcionar uma cura
+          a longo prazo.</p>
 
-      <button class="agendarConsulta">
-        <img src="./assets/images/whatsapp.svg" alt="Logo do WhatsApp">
-        Agende sua consulta
-      </button>
+        <button class="scheduleAppointment">
+          <img src="./assets/images/whatsapp.svg" alt="Acessar WhatsApp">
+          Agende sua consulta
+        </button>
 
-      <img class="women" src="./assets/images/women.png"
-        alt="Mulher negra com moletom verde, sorrindo e com a mão no coração">
-    </section>
-
-    <section class="stats">
-      <div class="stat">
-        <h2>+3.500</h2>
-        <p>Pacientes atendidos</p>
+        <img class="women" src="./assets/images/black-woman-with-green-sweatshirt-smiling-and-holding-her-heart.png"
+          alt="Mulher negra com moletom verde, sorrindo e com a mão no coração">
       </div>
 
-      <div class="stat">
-        <h2>+15</h2>
-        <p>Especialistas disponíveis</p>
-      </div>
+      <div class="stats">
+        <div class="stat">
+          <h2>+3.500</h2>
+          <p>Pacientes atendidos</p>
+        </div>
 
-      <div class="stat">
-        <h2>+10</h2>
-        <p>Anos no mercado</p>
+        <div class="stat">
+          <h2>+15</h2>
+          <p>Especialistas disponíveis</p>
+        </div>
+
+        <div class="stat">
+          <h2>+10</h2>
+          <p>Anos no mercado</p>
+        </div>
       </div>
-    </section>
-  </header>
+    </div>
+  </section>
+  <section id="services">
+    <div class="wrapper">
+      <header>
+        <h4 class="subtitle">Serviços</h4>
+        <h2 class="title">Como podemos ajudá-lo a se sentir melhor?</h2>
+      </header>
+
+      <div class="content">
+        <div class="cards">
+          <div class="card">
+            <img src="./assets/images/icons/check.svg" alt="Ícone de check">
+            <h3>Problemas digestivos</h3>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+              enim.</p>
+          </div>
+          <div class="card">
+            <img src="./assets/images/icons/check.svg" alt="Ícone de check">
+            <h3>Saúde Hormonal</h3>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+              enim.</p>
+          </div>
+          <div class="card">
+            <img src="./assets/images/icons/check.svg" alt="Ícone de check">
+            <h3>Bem-estar mental</h3>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+              enim.</p>
+          </div>
+          <div class="card">
+            <img src="./assets/images/icons/check.svg" alt="Ícone de check">
+            <h3>Cuidados Pediátricos</h3>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+              enim.</p>
+          </div>
+          <div class="card">
+            <img src="./assets/images/icons/check.svg" alt="Ícone de check">
+            <h3>Autoimune e Inflamação</h3>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+              enim.</p>
+          </div>
+          <div class="card">
+            <img src="./assets/images/icons/check.svg" alt="Ícone de check">
+            <h3>Saúde do Coração</h3>
+            <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+              enim.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <div class="wrapper">
+      <header>
+        <h4 class="subtitle">Sobre nós</h4>
+        <h2 class="title">Entenda quem somos e por que existimos</h2>
+      </header>
+
+      <div class="content">
+        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim.
+          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint.</p>
+
+        <img class="women" src="./assets/images/happy-doctor-holding-a-clipboard-with-patients.png"
+          alt="Mulher negra com moletom verde, sorrindo e com a mão no coração">
+      </div>
+    </div>
+  </section>
 </body>
 
+<script src="https://unpkg.com/scrollreveal"></script>
 <script src="./assets/scripts/main.js"></script>
 
 </html>

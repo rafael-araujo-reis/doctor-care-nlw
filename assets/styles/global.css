@@ -8,7 +8,9 @@
   
   --primary-color: hsla(170, 100%, 26%, 1);
   --secondary-color-white: hsla(0, 0%, 100%, 1);
-
+  
+  --white-100: #ffffff;
+  --gray-300: #acacac;
   --nav-height: 7.2rem;
 }
 
@@ -20,6 +22,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body{
@@ -75,7 +78,10 @@ a {
   text-decoration: none;
 }
 
-
 ul{
   list-style: none;
+}
+
+img{
+  max-width: 100%;
 }
