@@ -1,8 +1,8 @@
 :root {
-  --hue: -120;
+  --hue: 200;
   --brand-light: hsl(calc(var(--hue) - 20), 23%, 89%, 1);
   --brand-dark: hsl(var(--hue), 100%, 14%, 1);
-  --brand-background: hsl(calc(var(--hue) - 130), 100%, 97%, 1);
+  --brand-background: hsl(calc(var(--hue) - 80), 100%, 97%, 1);
 
 
   --gray-paragraph: hsl(calc(var(--hue) + 40), 9%, 31%, 1);
