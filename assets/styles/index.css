@@ -1,49 +1,50 @@
 /***** COMMON ***************************/
 
-.wrapper{
-  max-width : 37.5rem;
-  margin-inline    : auto;
+.wrapper {
+  max-width: 37.5rem;
+  margin-inline: auto;
 }
 
-.scroll{
+.scroll {
   background-color: var(--primary-color);
   transition: all 0.2s;
 }
 
-.open-menu, .close-menu{
+.open-menu,
+.close-menu {
   border: none;
   background-color: transparent;
 }
 
-.close-menu{
+.close-menu {
   position: absolute;
   visibility: hidden;
 }
 
 .scheduleAppointment {
-  border       : none;
+  border: none;
   border-radius: 10rem;
 
   padding: 1rem 2rem;
   display: flex;
 
-  margin-inline    : auto;
+  margin-inline: auto;
   margin-top: 3.2rem;
 
   justify-content: center;
-  align-items    : center;
-  gap            : 1rem;
+  align-items: center;
+  gap: 1rem;
 
   background-color: var(--primary-color);
-  color           : var(--secondary-color-white);
-  text-transform  : uppercase;
+  color: var(--secondary-color-white);
+  text-transform: uppercase;
 }
 
-.subtitle{
-  color         : var(--primary-color);
+.subtitle {
+  color: var(--primary-color);
   text-transform: uppercase;
-  font-size     : 1.4rem;
-  line-height   : 150%;
+  font-size: 1.4rem;
+  line-height: 150%;
   letter-spacing: 0.08rem;
 }
 
@@ -52,49 +53,51 @@ body.menu-expanded button {
   position: relative;
   z-index: 100;
 }
-body.menu-expanded{
+
+body.menu-expanded {
   overflow: hidden;
   transition: all 700ms;
 }
-body.menu-expanded > :not(nav){
+
+body.menu-expanded> :not(nav) {
   visibility: hidden;
 }
 
 body .menu,
-body.menu-expanded .open-menu{
+body.menu-expanded .open-menu {
   opacity: 0;
   visibility: hidden;
 }
 
 body.menu-expanded .menu,
-body.menu-expanded .close-menu{
+body.menu-expanded .close-menu {
   opacity: 1;
   visibility: visible;
-  
+
 }
 
-header > .title {
+header>.title {
   color: var(--gray-headline);
 
-  margin-top : 1.6rem;
+  margin-top: 1.6rem;
   line-height: 130%;
-  font-size  : 3.4rem;
+  font-size: 3.4rem;
 }
 
 /***** NAVIGATION ***********************/
 
-nav{
+nav {
   height: var(--nav-height);
-  
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
-  position:fixed;
+
+  position: fixed;
   width: 100%;
 }
 
-nav .menu{
+nav .menu {
   position: absolute;
 
   background-color: var(--primary-color);
@@ -111,7 +114,7 @@ nav .menu{
   font-size: 2.4rem;
 }
 
-nav .menu ul:nth-child(1){
+nav .menu ul:nth-child(1) {
   display: flex;
   flex-direction: column;
   gap: 3rem;
@@ -123,12 +126,12 @@ nav .menu ul:nth-child(1){
   margin-top: calc(4rem + var(--nav-height));
 }
 
-nav .menu .button{
+nav .menu .button {
   cursor: pointer;
   border-radius: 4rem;
 
   padding: 1.6rem 3.2rem;
-  
+
   text-transform: uppercase;
 
   background-color: var(--secondary-color-white);
@@ -138,22 +141,24 @@ nav .menu .button{
   font-size: 1.8rem;
 }
 
-nav a, .social-media {
+nav a,
+.social-media {
   color: var(--secondary-color-white);
   display: flex;
   gap: 3rem;
 }
+
 nav .social-media {
   margin-top: 3rem;
 }
 
-nav .social-media img{
+nav .social-media img {
   width: 2.4rem;
 }
 
-nav .wrapper{
+nav .wrapper {
   width: 100%;
-  
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -161,22 +166,20 @@ nav .wrapper{
 }
 
 nav.scroll svg:nth-child(1) path {
- fill: var(--secondary-color-white);
+  fill: var(--secondary-color-white);
 }
 
-nav.scroll a svg path  {
+nav.scroll a svg path {
   stroke: var(--secondary-color-white);
 }
 
 nav.scroll svg:nth-child(1) path,
-body.menu-expanded .logo path
-{
- fill: var(--secondary-color-white);
+body.menu-expanded .logo path {
+  fill: var(--secondary-color-white);
 }
 
 nav.scroll svg path,
-body.menu-expanded button path
-{
+body.menu-expanded button path {
   stroke: var(--secondary-color-white);
 }
 
@@ -185,11 +188,11 @@ body.menu-expanded button path
 /***** HOME *****************************/
 #home {
   text-align: center;
-  
-  padding    : calc(4rem + var(--nav-height)) 1rem 0;
+
+  padding: calc(4rem + var(--nav-height)) 1rem 0;
 }
 
-#home::before{
+#home::before {
   content: '';
   background-color: var(--brand-green-light);
 
@@ -203,7 +206,7 @@ body.menu-expanded button path
 }
 
 #home p {
-  color     : var(--gray-paragraph);
+  color: var(--gray-paragraph);
   margin-top: 2.4rem;
   font-size: 1.8rem;
 }
@@ -214,38 +217,38 @@ body.menu-expanded button path
 
   object-position: 0 2rem;
 
-  display         : flex;
+  display: flex;
 }
 
 
 #home .stats {
   background-color: var(--brand-beige);
-  border          : 0.1rem solid var(--brand-green-light);
+  border: 0.1rem solid var(--brand-green-light);
   border-top: 0;
-  border-radius   : 0.6rem;
+  border-radius: 0.6rem;
 
-  padding-block: 4rem ;
+  padding-block: 4rem;
 
   display: flex;
   flex-direction: column;
   gap: 4rem;
 }
 
-#home .stat{
-  display         : flex;
+#home .stat {
+  display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 #home .stat h2 {
-  font-size  : 4.8rem;
+  font-size: 4.8rem;
   line-height: 130%;
   margin-inline: auto;
 }
 
 #home .stat p {
-  font-size  : 1.8rem;
-  color      : var(--primary-color);
+  font-size: 1.8rem;
+  color: var(--primary-color);
   line-height: 150%;
   font-weight: 700;
 }
@@ -259,12 +262,12 @@ body.menu-expanded button path
 #services .cards {
   display: flex;
   flex-direction: column;
-  gap: 3.2rem ;
+  gap: 3.2rem;
 
   margin-top: 6rem;
 }
 
-#services .cards .card{
+#services .cards .card {
   padding: 2.4rem;
   display: flex;
   flex-direction: column;
@@ -275,29 +278,50 @@ body.menu-expanded button path
   border-radius: 0.6rem;
 }
 
-#services .cards .card h3{
+#services .cards .card h3 {
   font-size: 2.4rem;
 }
 
-#services .cards .card img{
+#services .cards .card img {
   width: 2.4rem;
 }
+
 /***** ABOUT ****************************/
-#about{
-  padding-block: 10rem;   
+#about {
+  padding-block: 10rem;
   background-color: var(--brand-beige);
 }
 
-#about header{
+#about header {
   margin-bottom: 2.4rem;
 }
 
-#about p{
+#about p {
   line-height: 150%;
 }
 
-#about img{
+#about img {
   margin-top: 6rem;
 }
 
+/***** FOOTER ***************************/
+footer {
+  display: flex;
+  flex-direction: column;
 
+  gap: 2.4rem;
+  padding: 6rem 2.4rem;
+  background-color: var(--primary-color);
+
+  color: var(--secondary-color-white);
+}
+
+footer div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+footer .social-media {
+  margin-top: 1.2rem;
+}
