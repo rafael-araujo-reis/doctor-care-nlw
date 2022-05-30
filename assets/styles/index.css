@@ -31,13 +31,21 @@
   margin-inline: auto;
   margin-top: 3.2rem;
 
+  width: fit-content;
+
   justify-content: center;
   align-items: center;
   gap: 1rem;
 
+  transition: all 0.3s;
+
   background-color: var(--primary-color);
   color: var(--secondary-color-white);
   text-transform: uppercase;
+}
+
+.scheduleAppointment:hover {
+  background: var(--brand-green-dark);
 }
 
 .subtitle {
@@ -126,7 +134,7 @@ nav .menu ul:nth-child(1) {
   margin-top: calc(4rem + var(--nav-height));
 }
 
-nav .menu .button {
+nav .menu .button-menu {
   cursor: pointer;
   border-radius: 4rem;
 
@@ -304,19 +312,67 @@ body.menu-expanded button path {
   margin-top: 6rem;
 }
 
-/***** FOOTER ***************************/
-footer {
+/***** CONTACT **************************/
+#contact {
+  padding: 10rem 2.4rem;
+}
+
+#contact .wrapper {
   display: flex;
   flex-direction: column;
+  gap: 3.2rem;
+}
 
-  gap: 2.4rem;
+#contact h2 {
+  font-size: 3.2rem;
+}
+
+#contact div {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+#contact .scheduleAppointment {
+  margin-top: 0;
+}
+
+.address-mail {
+  display: flex;
+  flex-direction: row;
+}
+
+.address-mail p,
+.address-mail a {
+  display: flex;
+  gap: 0.8rem;
+}
+
+/***** FOOTER ***************************/
+footer {
   padding: 6rem 2.4rem;
   background-color: var(--primary-color);
 
   color: var(--secondary-color-white);
 }
 
-footer div {
+footer .logo svg {
+  width: 23rem;
+  height: 100%;
+}
+
+footer .logo path {
+  fill: white;
+}
+
+footer .wrapper {
+  display: flex;
+  flex-direction: column;
+
+  gap: 2.4rem;
+}
+
+footer .wrapper div {
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
