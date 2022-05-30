@@ -40,12 +40,12 @@
   transition: all 0.3s;
 
   background-color: var(--primary-color);
-  color: var(--secondary-color-white);
+  color: var(--secondary-color);
   text-transform: uppercase;
 }
 
 .scheduleAppointment:hover {
-  background: var(--brand-green-dark);
+  background: var(--brand-dark);
 }
 
 .subtitle {
@@ -90,6 +90,28 @@ header>.title {
   margin-top: 1.6rem;
   line-height: 130%;
   font-size: 3.4rem;
+}
+
+/***** CUSTOM COLOR *********************/
+
+.open-menu svg path {
+  stroke: var(--primary-color)
+}
+
+.content .card svg path {
+  stroke: var(--brand-background)
+}
+
+#backToTopButton svg circle,
+.content .card svg circle,
+.address-mail svg path,
+#navigation .logo svg path[fill*="#00856F"] {
+  fill: var(--primary-color);
+}
+
+#navigation.scroll .logo svg path[fill*="#00856F"],
+body.menu-expanded #navigation .logo svg path[fill*="#00856F"] {
+  fill: var(--white-100);
 }
 
 /***** NAVIGATION ***********************/
@@ -142,7 +164,7 @@ nav .menu .button-menu {
 
   text-transform: uppercase;
 
-  background-color: var(--secondary-color-white);
+  background-color: var(--secondary-color);
   border: 0.2rem solid var(--primary-color);
   color: var(--primary-color);
   font-weight: 700;
@@ -153,14 +175,14 @@ nav .menu .button-menu {
 }
 
 nav .menu .button-menu:hover {
-  color: var(--secondary-color-white);
+  color: var(--secondary-color);
   background-color: var(--primary-color);
-  border: 0.2rem solid var(--secondary-color-white);
+  border: 0.2rem solid var(--secondary-color);
 }
 
 nav a,
 .social-media {
-  color: var(--secondary-color-white);
+  color: var(--secondary-color);
   display: flex;
   gap: 3rem;
 }
@@ -183,21 +205,21 @@ nav .wrapper {
 }
 
 nav.scroll svg:nth-child(1) path {
-  fill: var(--secondary-color-white);
+  fill: var(--secondary-color);
 }
 
 nav.scroll a svg path {
-  stroke: var(--secondary-color-white);
+  stroke: var(--secondary-color);
 }
 
 nav.scroll svg:nth-child(1) path,
 body.menu-expanded .logo path {
-  fill: var(--secondary-color-white);
+  fill: var(--secondary-color);
 }
 
 nav.scroll svg path,
 body.menu-expanded button path {
-  stroke: var(--secondary-color-white);
+  stroke: var(--secondary-color);
 }
 
 /***** MENU *****************************/
@@ -211,7 +233,7 @@ body.menu-expanded button path {
 
 #home::before {
   content: '';
-  background-color: var(--brand-green-light);
+  background-color: var(--brand-light);
 
   position: absolute;
   top: 0;
@@ -239,8 +261,8 @@ body.menu-expanded button path {
 
 
 #home .stats {
-  background-color: var(--brand-beige);
-  border: 0.1rem solid var(--brand-green-light);
+  background-color: var(--brand-background);
+  border: 0.1rem solid var(--brand-light);
   border-top: 0;
   border-radius: 0.6rem;
 
@@ -290,7 +312,7 @@ body.menu-expanded button path {
   flex-direction: column;
   gap: 2rem;
   background-color: var(--white-100);
-  border: 0.1rem solid var(--brand-green-light);
+  border: 0.1rem solid var(--brand-light);
 
   border-radius: 0.6rem;
 }
@@ -306,7 +328,7 @@ body.menu-expanded button path {
 /***** ABOUT ****************************/
 #about {
   padding-block: 10rem;
-  background-color: var(--brand-beige);
+  background-color: var(--brand-background);
 }
 
 #about header {
@@ -362,7 +384,7 @@ footer {
   padding: 6rem 2.4rem;
   background-color: var(--primary-color);
 
-  color: var(--secondary-color-white);
+  color: var(--secondary-color);
 }
 
 footer .logo svg {

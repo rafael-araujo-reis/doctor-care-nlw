@@ -1,18 +1,18 @@
 :root {
-  --brand-green-light: hsla(148, 23%, 89%, 1);
-  --brand-green-dark: hsla(170, 100%, 14%, 1);
+  --hue: -120;
+  --brand-light: hsl(calc(var(--hue) - 20), 23%, 89%, 1);
+  --brand-dark: hsl(var(--hue), 100%, 14%, 1);
+  --brand-background: hsl(calc(var(--hue) - 130), 100%, 97%, 1);
 
-  --brand-beige: hsla(39, 100%, 97%, 1);
 
+  --gray-paragraph: hsl(calc(var(--hue) + 40), 9%, 31%, 1);
+  --gray-headline: hsl(calc(var(--hue) + 40), 11%, 15%, 1);
 
-  --gray-paragraph: hsla(210, 9%, 31%, 1);
-  --gray-headline: hsla(210, 11%, 15%, 1);
+  --primary-color: hsl(var(--hue), 100%, 26%, 1);
+  --secondary-color: hsl(0, 0%, 100%, 1);
 
-  --primary-color: hsla(170, 100%, 26%, 1);
-  --secondary-color-white: hsla(0, 0%, 100%, 1);
-
-  --white-100: #ffffff;
-  --gray-300: #acacac;
+  --white-100: hsl(0, 0%, 100%);
+  --gray-300: hsl(0, 0%, 67%);
   --nav-height: 7.2rem;
 }
 
