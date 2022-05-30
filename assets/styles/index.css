@@ -143,10 +143,19 @@ nav .menu .button-menu {
   text-transform: uppercase;
 
   background-color: var(--secondary-color-white);
+  border: 0.2rem solid var(--primary-color);
   color: var(--primary-color);
   font-weight: 700;
 
   font-size: 1.8rem;
+
+  transition: all 0.2s;
+}
+
+nav .menu .button-menu:hover {
+  color: var(--secondary-color-white);
+  background-color: var(--primary-color);
+  border: 0.2rem solid var(--secondary-color-white);
 }
 
 nav a,
@@ -380,4 +389,23 @@ footer .wrapper div {
 
 footer .social-media {
   margin-top: 1.2rem;
+}
+
+/***** BACK TO TOP **********************/
+#backToTopButton {
+  position: fixed;
+  bottom: 1rem;
+  right: 3rem;
+
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(100%);
+
+  transition: all 0.2s;
+}
+
+#backToTopButton.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
