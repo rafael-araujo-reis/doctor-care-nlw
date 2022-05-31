@@ -551,11 +551,13 @@ footer .social-media {
     border: 0.1rem solid var(--secondary-color);
   }
 
-  nav#navigation .menu a:hover {
+  nav#navigation .menu li a.active,
+  nav#navigation .menu li a:hover {
     font-weight: 700;
     transition: all 0.3s;
   }
 
+  nav#navigation .menu ul li a.active,
   nav#navigation.scroll .menu a:hover {
     opacity: 1;
   }
@@ -567,23 +569,32 @@ footer .social-media {
   }
 
   nav#navigation .menu ul li::after {
-    transition: width 0.2s;
+    transition: width 0.3s;
   }
 
-  nav#navigation .menu ul li:hover::after {
-    content: '';
-    border: 0.2rem solid var(--primary-color);
+  nav#navigation .menu ul li a.active {
+    opacity: 1;
+  }
 
+  nav#navigation .menu li a:hover::after {
+    content: '';
     position: relative;
-    bottom: -2.5rem;
+    bottom: -2.6rem;
 
     display: block;
     width: 100%;
+    border: 0.1rem solid var(--primary-color);
   }
 
-  nav#navigation.scroll .menu li:hover::after {
+  nav#navigation.scroll .menu ul li a.active::after,
+  nav#navigation.scroll .menu li a:hover::after {
+    content: '';
+    position: relative;
+    bottom: -2.6rem;
 
-    border: 0.2rem solid var(--secondary-color);
+    display: block;
+    width: 100%;
+    border-bottom: 0.4rem solid var(--secondary-color);
   }
 
 
