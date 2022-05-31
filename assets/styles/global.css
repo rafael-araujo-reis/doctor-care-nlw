@@ -1,5 +1,5 @@
 :root {
-  --hue: 200;
+  --hue: 0;
   --brand-light: hsl(calc(var(--hue) - 20), 23%, 89%, 1);
   --brand-dark: hsl(var(--hue), 100%, 14%, 1);
   --brand-background: hsl(calc(var(--hue) - 80), 100%, 97%, 1);

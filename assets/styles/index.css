@@ -1,7 +1,7 @@
 /***** COMMON ***************************/
 
 .wrapper {
-  max-width: 37.5rem;
+  width: min(50rem, 100%);
   margin-inline: auto;
 }
 
@@ -92,6 +92,10 @@ header>.title {
   font-size: 3.4rem;
 }
 
+section {
+  padding: 1rem;
+}
+
 /***** CUSTOM COLOR *********************/
 
 .open-menu svg path {
@@ -132,6 +136,7 @@ nav .menu {
 
   background-color: var(--primary-color);
   top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
 
@@ -196,8 +201,6 @@ nav .social-media img {
 }
 
 nav .wrapper {
-  width: 100%;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -261,15 +264,18 @@ body.menu-expanded button path {
 
 
 #home .stats {
+  width: 100%;
   background-color: var(--brand-background);
   border: 0.1rem solid var(--brand-light);
   border-top: 0;
   border-radius: 0.6rem;
 
+  margin-inline: auto;
   padding-block: 4rem;
 
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 4rem;
 }
 
