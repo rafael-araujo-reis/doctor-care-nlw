@@ -242,7 +242,7 @@ body.menu-expanded button path {
   top: 0;
   left: 0;
   width: 100%;
-  height: calc(108rem + var(--nav-height));
+  height: calc(110rem + var(--nav-height));
 
   z-index: -1;
 }
@@ -595,6 +595,10 @@ footer .social-media {
     grid-template-areas:
       'A B'
       'C C';
+  }
+
+  #home::before {
+    height: calc(75rem + var(--nav-height));
   }
 
   #home .title {
